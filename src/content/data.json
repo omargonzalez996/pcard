@@ -1,0 +1,31 @@
+{
+    "text": {
+        "spanish": {
+            "name": "Omar González",
+            "job": "Desarrollador Web | Especialista en Backend",
+            "job-description": "Transformando ideas en soluciones tecnológicas eficientes. Con experiencia en Node.js, MySQL, y API design, me enfoco en crear aplicaciones robustas y escalables para mejorar la experiencia del usuario y optimizar procesos empresariales."
+        },
+        "english": {
+            "name": "Omar González",
+            "job": "Web Developer | Backend Specialist",
+            "job-description": "Turning ideas into efficient technological solutions. Experienced in Node.js, MySQL, and API design, I focus on building robust and scalable applications to enhance user experience and optimize business processes."
+        }
+    },
+    "social": [
+        {
+            "service": "Linkedin",
+            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/LinkedIn.svg",
+            "profile_url": "#"
+        },
+        {
+            "service": "Github",
+            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Github-Light.svg",
+            "profile_url": "#"
+        },
+        {
+            "service": "Linkedin",
+            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/LinkedIn.svg",
+            "profile_url": ""
+        }
+    ]
+}
