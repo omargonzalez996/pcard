@@ -1,11 +1,13 @@
 {
     "text": {
         "spanish": {
+            "abreviation": "ES",
             "name": "Omar González",
             "job": "Desarrollador Web | Especialista en Backend",
             "job-description": "Transformando ideas en soluciones tecnológicas eficientes. Con experiencia en Node.js, MySQL, y API design, me enfoco en crear aplicaciones robustas y escalables para mejorar la experiencia del usuario y optimizar procesos empresariales."
         },
         "english": {
+            "abreviation": "EN",
             "name": "Omar González",
             "job": "Web Developer | Backend Specialist",
             "job-description": "Turning ideas into efficient technological solutions. Experienced in Node.js, MySQL, and API design, I focus on building robust and scalable applications to enhance user experience and optimize business processes."
@@ -26,6 +28,72 @@
             "service": "Linkedin",
             "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/LinkedIn.svg",
             "profile_url": ""
+        }
+    ],
+    "skills": [
+        {
+            "name": "AWS",
+            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/AWS-Light.svg"
+        },
+        {
+            "name": "Android Studio",
+            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/AndroidStudio-Light.svg"
+        },
+        {
+            "name": "Arduino",
+            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Arduino.svg"
+        },
+        {
+            "name": "Blender",
+            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Blender-Light.svg"
+        },
+        {
+            "name": "BUNJs",
+            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Bun-Light.svg"
+        },
+        {
+            "name": "CSS",
+            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/CSS.svg"
+        },
+        {
+            "name": "Discord",
+            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Discord.svg"
+        },
+        {
+            "name": "Docker",
+            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Docker.svg"
+        },
+        {
+            "name": "Electron",
+            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Electron.svg"
+        },
+        {
+            "name": "ElysiaJs",
+            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Elysia-Light.svg"
+        },
+        {
+            "name": "",
+            "logo_url": ""
+        },
+        {
+            "name": "",
+            "logo_url": ""
+        },
+        {
+            "name": "",
+            "logo_url": ""
+        },
+        {
+            "name": "",
+            "logo_url": ""
+        },
+        {
+            "name": "",
+            "logo_url": ""
+        },
+        {
+            "name": "",
+            "logo_url": ""
         }
     ]
 }

@@ -1,23 +1,43 @@
-import "react-toggle/style.css";
-import Toggle from "react-toggle";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import SwitchToggle from "./components/SwitchToggle";
+import { Icon } from "@iconify/react";
 import data from "./content/data.json";
 
 function App() {
   const [lang, setLang] = useState(data.text.spanish);
+  const [toggleLang, setToggleLang] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+  const [modeIcon, setModeIcon] = useState(
+    <Icon icon="material-symbols:light-mode" />
+  );
+  const skills = data.skills;
+
+  useEffect(() => {
+    toggleLang ? setLang(data.text.english) : setLang(data.text.spanish);
+  }, [toggleLang]);
+
+  useEffect(() => {
+    darkMode
+      ? setModeIcon(<Icon icon="material-symbols:dark-mode" />)
+      : setModeIcon(<Icon icon="material-symbols:light-mode" />);
+  }, [darkMode]);
 
   return (
     <>
-      <div className="absolute">
-        <label>
-          <Toggle
-            defaultChecked={this.state.tofuIsReady}
-            icons={false}
-            onChange={this.handleTofuChange}
-          />
-          <span>No icons</span>
-        </label>
+      {/* TOGGLES */}
+      <div className="absolute right-5 top-10 flex flex-col space-y-2">
+        <SwitchToggle
+          description={lang.abreviation}
+          isSelected={toggleLang}
+          setIsSelected={setToggleLang}
+        />
+        <SwitchToggle
+          description={modeIcon}
+          isSelected={darkMode}
+          setIsSelected={setDarkMode}
+        />
       </div>
+      {/* CONTENT */}
       <div className="flex flex-col items-center justify-start h-svh w-lvw bg-slate-300 antialiased">
         <div className="flex items-center justify-center w-full h-36 ">
           <div className="flex items-center justify-center drop-shadow-xl relative top-10 rounded-full bg-slate-800 w-4/12 h-4/12 max-w-40 border-white border-4">
@@ -33,7 +53,10 @@ function App() {
             {lang["job-description"]}
           </p>
         </div>
-        <div></div>
+        <div className="">
+          <div>Habilidades de Software</div>
+          {}
+        </div>
       </div>
     </>
   );
