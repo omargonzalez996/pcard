@@ -5,31 +5,38 @@
             "name": "Omar González",
             "job": "Desarrollador Web | Especialista en Backend",
             "job-description": "Transformando ideas en soluciones tecnológicas eficientes. Con experiencia en Node.js, MySQL, y API design, me enfoco en crear aplicaciones robustas y escalables para mejorar la experiencia del usuario y optimizar procesos empresariales.",
-            "skills-title": "Habilidades"
+            "skills-title": "Habilidades",
+            "contact-title": "Ponte en contacto",
+            "mail-button": "Mandame un Email"
         },
         "english": {
             "abreviation": "EN",
             "name": "Omar González",
             "job": "Web Developer | Backend Specialist",
             "job-description": "Turning ideas into efficient technological solutions. Experienced in Node.js, MySQL, and API design, I focus on building robust and scalable applications to enhance user experience and optimize business processes.",
-            "skills-title": "Skills"
+            "skills-title": "Skills",
+            "contact-title": "Get in touch",
+            "mail-button": "Send me an Email"
         }
     },
     "social": [
         {
+            "id": 1,
             "service": "Linkedin",
-            "logo_url": "https://skillicons.dev/icons?i=LinkedIn.svg",
-            "profile_url": "#"
+            "logo_url": "mdi:linkedin",
+            "profile_url": "https://www.linkedin.com/in/luis-omar-gonzález-garcía-0853b5257/"
         },
         {
+            "id": 2,
             "service": "Github",
-            "logo_url": "https://skillicons.dev/icons?i=Github-Light.svg",
-            "profile_url": "#"
+            "logo_url": "mdi:github",
+            "profile_url": "https://github.com/omargonzalez996"
         },
         {
-            "service": "Linkedin",
-            "logo_url": "https://skillicons.dev/icons?i=LinkedIn.svg",
-            "profile_url": ""
+            "id": 3,
+            "service": "Whatsapp",
+            "logo_url": "ic:baseline-whatsapp",
+            "profile_url": "https://wa.me/524661010252"
         }
     ],
     "skills": [
