@@ -4,96 +4,234 @@
             "abreviation": "ES",
             "name": "Omar González",
             "job": "Desarrollador Web | Especialista en Backend",
-            "job-description": "Transformando ideas en soluciones tecnológicas eficientes. Con experiencia en Node.js, MySQL, y API design, me enfoco en crear aplicaciones robustas y escalables para mejorar la experiencia del usuario y optimizar procesos empresariales."
+            "job-description": "Transformando ideas en soluciones tecnológicas eficientes. Con experiencia en Node.js, MySQL, y API design, me enfoco en crear aplicaciones robustas y escalables para mejorar la experiencia del usuario y optimizar procesos empresariales.",
+            "skills-title": "Habilidades"
         },
         "english": {
             "abreviation": "EN",
             "name": "Omar González",
             "job": "Web Developer | Backend Specialist",
-            "job-description": "Turning ideas into efficient technological solutions. Experienced in Node.js, MySQL, and API design, I focus on building robust and scalable applications to enhance user experience and optimize business processes."
+            "job-description": "Turning ideas into efficient technological solutions. Experienced in Node.js, MySQL, and API design, I focus on building robust and scalable applications to enhance user experience and optimize business processes.",
+            "skills-title": "Skills"
         }
     },
     "social": [
         {
             "service": "Linkedin",
-            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/LinkedIn.svg",
+            "logo_url": "https://skillicons.dev/icons?i=LinkedIn.svg",
             "profile_url": "#"
         },
         {
             "service": "Github",
-            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Github-Light.svg",
+            "logo_url": "https://skillicons.dev/icons?i=Github-Light.svg",
             "profile_url": "#"
         },
         {
             "service": "Linkedin",
-            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/LinkedIn.svg",
+            "logo_url": "https://skillicons.dev/icons?i=LinkedIn.svg",
             "profile_url": ""
         }
     ],
     "skills": [
         {
+            "id": 1,
             "name": "AWS",
-            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/AWS-Light.svg"
+            "logo_url": "https://skillicons.dev/icons?i=aws"
         },
         {
+            "id": 2,
             "name": "Android Studio",
-            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/AndroidStudio-Light.svg"
+            "logo_url": "https://skillicons.dev/icons?i=androidstudio"
         },
         {
+            "id": 3,
             "name": "Arduino",
-            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Arduino.svg"
+            "logo_url": "https://skillicons.dev/icons?i=arduino"
         },
         {
+            "id": 4,
             "name": "Blender",
-            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Blender-Light.svg"
+            "logo_url": "https://skillicons.dev/icons?i=blender"
         },
         {
+            "id": 5,
             "name": "BUNJs",
-            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Bun-Light.svg"
+            "logo_url": "https://skillicons.dev/icons?i=bun"
         },
         {
+            "id": 6,
             "name": "CSS",
-            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/CSS.svg"
+            "logo_url": "https://skillicons.dev/icons?i=css"
         },
         {
+            "id": 7,
             "name": "Discord",
-            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Discord.svg"
+            "logo_url": "https://skillicons.dev/icons?i=discord"
         },
         {
+            "id": 8,
             "name": "Docker",
-            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Docker.svg"
+            "logo_url": "https://skillicons.dev/icons?i=docker"
         },
         {
+            "id": 9,
             "name": "Electron",
-            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Electron.svg"
+            "logo_url": "https://skillicons.dev/icons?i=electron"
         },
         {
+            "id": 10,
             "name": "ElysiaJs",
-            "logo_url": "https://github.com/tandpfun/skill-icons/blob/main/icons/Elysia-Light.svg"
+            "logo_url": "https://skillicons.dev/icons?i=elysia"
         },
         {
-            "name": "",
-            "logo_url": ""
+            "id": 11,
+            "name": "ExpressJs",
+            "logo_url": "https://skillicons.dev/icons?i=express"
         },
         {
-            "name": "",
-            "logo_url": ""
+            "id": 12,
+            "name": "Figma",
+            "logo_url": "https://skillicons.dev/icons?i=figma"
         },
         {
-            "name": "",
-            "logo_url": ""
+            "id": 13,
+            "name": "Firebase",
+            "logo_url": "https://skillicons.dev/icons?i=firebase"
         },
         {
-            "name": "",
-            "logo_url": ""
+            "id": 14,
+            "name": "Flutter",
+            "logo_url": "https://skillicons.dev/icons?i=flutter"
         },
         {
-            "name": "",
-            "logo_url": ""
+            "id": 15,
+            "name": "Git",
+            "logo_url": "https://skillicons.dev/icons?i=git"
         },
         {
-            "name": "",
-            "logo_url": ""
+            "id": 16,
+            "name": "HTML",
+            "logo_url": "https://skillicons.dev/icons?i=html"
+        },
+        {
+            "id": 17,
+            "name": "HTMX",
+            "logo_url": "https://skillicons.dev/icons?i=htmx"
+        },
+        {
+            "id": 18,
+            "name": "Illustrator",
+            "logo_url": "https://skillicons.dev/icons?i=illustrator"
+        },
+        {
+            "id": 19,
+            "name": "Javascript",
+            "logo_url": "https://skillicons.dev/icons?i=javascript"
+        },
+        {
+            "id": 20,
+            "name": "Linux",
+            "logo_url": "https://skillicons.dev/icons?i=linux"
+        },
+        {
+            "id": 21,
+            "name": "Markdown",
+            "logo_url": "https://skillicons.dev/icons?i=markdown"
+        },
+        {
+            "id": 22,
+            "name": "MongoDB",
+            "logo_url": "https://skillicons.dev/icons?i=mongodb"
+        },
+        {
+            "id": 23,
+            "name": "MySQL",
+            "logo_url": "https://skillicons.dev/icons?i=mysql"
+        },
+        {
+            "id": 24,
+            "name": "NextJs",
+            "logo_url": "https://skillicons.dev/icons?i=nextjs"
+        },
+        {
+            "id": 25,
+            "name": "NodeJs",
+            "logo_url": "https://skillicons.dev/icons?i=nodejs"
+        },
+        {
+            "id": 26,
+            "name": "Notion",
+            "logo_url": "https://skillicons.dev/icons?i=notion"
+        },
+        {
+            "id": 27,
+            "name": "Npm",
+            "logo_url": "https://skillicons.dev/icons?i=npm"
+        },
+        {
+            "id": 28,
+            "name": "Obsidian",
+            "logo_url": "https://skillicons.dev/icons?i=obsidian"
+        },
+        {
+            "id": 29,
+            "name": "Photoshop",
+            "logo_url": "https://skillicons.dev/icons?i=photoshop"
+        },
+        {
+            "id": 30,
+            "name": "Postman",
+            "logo_url": "https://skillicons.dev/icons?i=postman"
+        },
+        {
+            "id": 31,
+            "name": "Premiere",
+            "logo_url": "https://skillicons.dev/icons?i=premiere"
+        },
+        {
+            "id": 32,
+            "name": "Python",
+            "logo_url": "https://skillicons.dev/icons?i=python"
+        },
+        {
+            "id": 33,
+            "name": "React",
+            "logo_url": "https://skillicons.dev/icons?i=react"
+        },
+        {
+            "id": 34,
+            "name": "Regex",
+            "logo_url": "https://skillicons.dev/icons?i=regex"
+        },
+        {
+            "id": 35,
+            "name": "Sass",
+            "logo_url": "https://skillicons.dev/icons?i=sass"
+        },
+        {
+            "id": 36,
+            "name": "Svelte",
+            "logo_url": "https://skillicons.dev/icons?i=svelte"
+        },
+        {
+            "id": 37,
+            "name": "Tailwind",
+            "logo_url": "https://skillicons.dev/icons?i=tailwind"
+        },
+        {
+            "id": 38,
+            "name": "Typescript",
+            "logo_url": "https://skillicons.dev/icons?i=typescript"
+        },
+        {
+            "id": 39,
+            "name": "VSCode",
+            "logo_url": "https://skillicons.dev/icons?i=vscode"
+        },
+        {
+            "id": 40,
+            "name": "Vite",
+            "logo_url": "https://skillicons.dev/icons?i=vite"
         }
     ]
 }
