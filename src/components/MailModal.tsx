@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import { useEffect, useState } from "react";
-import emailjs from "emailjs-com";
 
 interface content {
   "modal-input-name": string;
@@ -32,28 +31,6 @@ const MailModal = ({ setShowModal, darkMode, content }: modalProps) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     console.log("function_not_ready");
-    // const templateParams = {
-    //   name,
-    //   email,
-    //   phoneNumber,
-    //   subject,
-    //   message,
-    // };
-    // emailjs
-    //   .send(
-    //     "your_service_id",
-    //     "your_template_id",
-    //     templateParams,
-    //     "your_user_id"
-    //   )
-    //   .then(
-    //     (response) => {
-    //       console.log("SUCCESS!", response.status, response.text);
-    //     },
-    //     (err) => {
-    //       console.log("FAILED...", err);
-    //     }
-    //   );
   };
 
   useEffect(() => {
