@@ -7,7 +7,12 @@
             "job-description": "Transformando ideas en soluciones tecnológicas eficientes. Con experiencia en Node.js, MySQL, y API design, me enfoco en crear aplicaciones robustas y escalables para mejorar la experiencia del usuario y optimizar procesos empresariales.",
             "skills-title": "Habilidades",
             "contact-title": "Ponte en contacto",
-            "mail-button": "Mandame un Email"
+            "mail-button": "Mandame un Email",
+            "modal-input-name": "Nombre Completo",
+            "modal-input-email": "Email",
+            "modal-input-number": "Numero",
+            "modal-input-subject": "Asunto",
+            "modal-input-message": "mensaje"
         },
         "english": {
             "abreviation": "EN",
@@ -16,7 +21,12 @@
             "job-description": "Turning ideas into efficient technological solutions. Experienced in Node.js, MySQL, and API design, I focus on building robust and scalable applications to enhance user experience and optimize business processes.",
             "skills-title": "Skills",
             "contact-title": "Get in touch",
-            "mail-button": "Send me an Email"
+            "mail-button": "Send me an Email",
+            "modal-input-name": "Full Name",
+            "modal-input-email": "Email",
+            "modal-input-number": "Phone Number",
+            "modal-input-subject": "Subject",
+            "modal-input-message": "Message"
         }
     },
     "social": [

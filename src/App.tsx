@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 import data from "./content/data.json";
 
 function App() {
-  const [textContent, setLang] = useState(data.text.spanish);
+  const [textContent, setTextContent] = useState(data.text.spanish);
   const [toggleLang, setToggleLang] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -18,7 +18,9 @@ function App() {
   const social = data.social;
 
   useEffect(() => {
-    toggleLang ? setLang(data.text.english) : setLang(data.text.spanish);
+    toggleLang
+      ? setTextContent(data.text.english)
+      : setTextContent(data.text.spanish);
     console.log("eng: ", toggleLang);
   }, [toggleLang]);
 
@@ -37,8 +39,14 @@ function App() {
   return (
     <>
       {/* TOGGLES */}
-      {showModal ? <MailModal setShowModal={setShowModal} /> : null}
-      <div className="absolute right-5 top-10 flex flex-col space-y-2">
+      {showModal ? (
+        <MailModal
+          setShowModal={setShowModal}
+          darkMode={darkMode}
+          content={textContent}
+        />
+      ) : null}
+      <div className="absolute right-5 top-10 flex flex-col space-y-2 z-10">
         <SwitchToggle
           description={textContent.abreviation}
           isSelected={toggleLang}
@@ -74,12 +82,12 @@ function App() {
         </div>
         <div
           className={classNames("bg-white mt-20 p-2 rounded-md shadow-xl", {
-            "bg-gray-600": darkMode,
+            "bg-gray-700": darkMode,
           })}
         >
           <h2
             className={classNames("text-3xl text-center text-slate-900", {
-              "text-gray-200": darkMode,
+              "text-gray-100": darkMode,
             })}
           >
             {textContent.name}
@@ -89,7 +97,7 @@ function App() {
           className={classNames(
             "mt-6 text-slate-900 flex flex-col items-center",
             {
-              "text-gray-200": darkMode,
+              "text-gray-100": darkMode,
             }
           )}
         >
@@ -103,7 +111,7 @@ function App() {
             className={classNames(
               "text-md font-bold text-center mb-5 text-slate-900",
               {
-                "text-gray-200": darkMode,
+                "text-gray-100": darkMode,
               }
             )}
           >
@@ -126,7 +134,7 @@ function App() {
               className={classNames(
                 "text-md font-bold text-center mb-5 text-slate-900",
                 {
-                  "text-gray-200": darkMode,
+                  "text-gray-100": darkMode,
                 }
               )}
             >
@@ -140,7 +148,11 @@ function App() {
           })}
         >
           {social.map((social) => (
-            <a className="cursor-pointer" href={social.profile_url}>
+            <a
+              key={social.id}
+              className="cursor-pointer"
+              href={social.profile_url}
+            >
               <Icon width={50} icon={social.logo_url} />
             </a>
           ))}
