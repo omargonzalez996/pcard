@@ -61,18 +61,20 @@ function App() {
       {/* CONTENT */}
       <div
         className={classNames(
-          "flex flex-col items-center justify-start h-svh w-lvw bg-slate-300 antialiased transition-colors duration-300 ease-in-out",
+          "flex flex-col items-center justify-start h-svh w-lvw antialiased transition-colors duration-300 ease-in-out",
           {
             "bg-slate-900": darkMode,
+            "bg-slate-300": !darkMode,
           }
         )}
       >
         <div className="flex items-center justify-center w-full h-36 ">
           <div
             className={classNames(
-              "flex items-center justify-center drop-shadow-xl relative top-10 rounded-full bg-slate-400 w-4/12 h-4/12 max-w-40 border-white border-4",
+              "flex items-center justify-center drop-shadow-xl relative top-10 rounded-full w-4/12 h-4/12 max-w-40 border-4",
               {
                 "border-gray-700 bg-slate-950": darkMode,
+                "border-white bg-slate-400": !darkMode,
               }
             )}
           >
@@ -81,25 +83,25 @@ function App() {
           </div>
         </div>
         <div
-          className={classNames("bg-white mt-20 p-2 rounded-md shadow-xl", {
+          className={classNames("mt-20 p-2 rounded-md shadow-xl", {
             "bg-gray-700": darkMode,
+            "bg-white": !darkMode,
           })}
         >
           <h2
-            className={classNames("text-3xl text-center text-slate-900", {
+            className={classNames("text-3xl text-center", {
               "text-gray-100": darkMode,
+              "text-slate-900": !darkMode,
             })}
           >
             {textContent.name}
           </h2>
         </div>
         <div
-          className={classNames(
-            "mt-6 text-slate-900 flex flex-col items-center",
-            {
-              "text-gray-100": darkMode,
-            }
-          )}
+          className={classNames("mt-6 flex flex-col items-center", {
+            "text-gray-100": darkMode,
+            "text-slate-900": !darkMode,
+          })}
         >
           <p className=" text-md font-bold text-center">{textContent.job}</p>
           <p className="mt-3 text-xs text-center w-10/12 max-w-96">
@@ -108,12 +110,10 @@ function App() {
         </div>
         <div className="mt-5">
           <div
-            className={classNames(
-              "text-md font-bold text-center mb-5 text-slate-900",
-              {
-                "text-gray-100": darkMode,
-              }
-            )}
+            className={classNames("text-md font-bold text-center mb-5", {
+              "text-gray-100": darkMode,
+              "text-slate-900": !darkMode,
+            })}
           >
             {textContent["skills-title"]}
           </div>
@@ -131,12 +131,10 @@ function App() {
         <div className="mt-5">
           <div>
             <h2
-              className={classNames(
-                "text-md font-bold text-center mb-5 text-slate-900",
-                {
-                  "text-gray-100": darkMode,
-                }
-              )}
+              className={classNames("text-md font-bold text-center mb-5", {
+                "text-gray-100": darkMode,
+                "text-slate-900": !darkMode,
+              })}
             >
               {textContent["contact-title"]}
             </h2>
@@ -144,7 +142,8 @@ function App() {
         </div>
         <div
           className={classNames("flex justify-center space-x-5", {
-            "text-gray-200": darkMode,
+            "text-gray-100": darkMode,
+            "text-slate-900": !darkMode,
           })}
         >
           {social.map((social) => (
