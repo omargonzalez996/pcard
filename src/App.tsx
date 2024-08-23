@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
 import SwitchToggle from "./components/SwitchToggle";
 import MailModal from "./components/MailModal";
-import classNames from "classnames";
-import { Icon } from "@iconify/react";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import data from "./content/data.json";
+import { Icon } from "@iconify/react";
+import classNames from "classnames";
 
 function App() {
   const [textContent, setTextContent] = useState(data.text.spanish);
@@ -69,7 +70,13 @@ function App() {
         )}
       >
         <div className="flex items-center justify-center w-full h-36 ">
-          <div
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+            whileTap={{ scale: 1.1 }}
+            drag="x"
+            dragConstraints={{ left: -50, right: 50 }}
             className={classNames(
               "flex items-center justify-center drop-shadow-xl relative top-10 rounded-full w-4/12 h-4/12 max-w-40 border-4",
               {
@@ -79,24 +86,33 @@ function App() {
             )}
           >
             <img className="rounded-full" src="/sakurai.webp" alt="logo.png" />
-            {/* <img src="/logo.png" alt="logo.png" /> */}
-          </div>
+          </motion.div>
         </div>
-        <div
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 1.1 }}
+          drag="x"
+          dragConstraints={{ left: -50, right: 50 }}
           className={classNames("mt-20 p-2 rounded-md shadow-xl", {
             "bg-gray-700": darkMode,
             "bg-white": !darkMode,
           })}
         >
-          <h2
+          <motion.h2
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
             className={classNames("text-3xl text-center", {
               "text-gray-100": darkMode,
               "text-slate-900": !darkMode,
             })}
           >
             {textContent.name}
-          </h2>
-        </div>
+          </motion.h2>
+        </motion.div>
         <div
           className={classNames("mt-6 flex flex-col items-center", {
             "text-gray-100": darkMode,
@@ -104,9 +120,14 @@ function App() {
           })}
         >
           <p className=" text-md font-bold text-center">{textContent.job}</p>
-          <p className="mt-3 text-xs text-center w-10/12 max-w-96">
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="mt-3 text-xs text-center w-10/12 max-w-96"
+          >
             {textContent["job-description"]}
-          </p>
+          </motion.p>
         </div>
         <div className="mt-5">
           <div
@@ -119,11 +140,18 @@ function App() {
           </div>
           <div className="grid grid-cols-8 sm:grid-cols-2 md:grid-cols-10 gap-1">
             {skills.map((skill) => (
-              <img
+              <motion.img
                 className="w-7 mr-1 shadow-md "
                 key={skill.id}
                 src={`${skill.logo_url}`}
                 alt={`${skill.name}.svg`}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.4,
+                  ease: "easeOut",
+                  delay: skill.id * 0.05, // Incrementa el delay para cada elemento
+                }}
               />
             ))}
           </div>
